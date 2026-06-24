@@ -1238,3 +1238,26 @@ h1 {
     font-size: clamp(2rem, 12vw, 3.2rem);
   }
 }
+.preview-main {
+    min-width: 0;
+}
+
+.preview-main h3 {
+    max-width: 360px;
+}
+
+.preview-main p {
+    max-width: 360px;
+}
+
+.browser-body {
+    grid-template-columns: 1fr;
+}
+.preview-grid a {
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
