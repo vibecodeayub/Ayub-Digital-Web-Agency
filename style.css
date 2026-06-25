@@ -46,6 +46,13 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
 svg {
   width: 1em;
   height: 1em;
@@ -218,6 +225,10 @@ svg {
   transform: translateY(-2px);
   background: rgba(56, 189, 248, 0.18);
   border-color: rgba(56, 189, 248, 0.72);
+}
+
+.nav-button-label-mobile {
+  display: none;
 }
 
 .mobile-menu {
@@ -1148,26 +1159,44 @@ h1 {
   }
 
   .navbar {
-    min-height: 70px;
-    gap: 10px;
+    min-height: 60px;
+    gap: 8px;
   }
 
   .navbar .nav-button {
     display: inline-flex;
     margin-left: auto;
-    padding: 10px 13px;
-    font-size: 0.78rem;
+    padding: 8px 11px;
+    font-size: 0.76rem;
     white-space: nowrap;
   }
 
+  .nav-button-label-desktop {
+    display: none;
+  }
+
+  .nav-button-label-mobile {
+    display: inline;
+  }
+
   .logo-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 13px;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
   }
 
   .logo-text {
-    font-size: 1.05rem;
+    font-size: 1rem;
+  }
+
+  .mobile-menu summary {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .mobile-menu-panel {
+    top: 48px;
   }
 
   .hero {
@@ -1308,7 +1337,7 @@ h1 {
   }
 
   .navbar .nav-button {
-    padding: 9px 11px;
+    padding: 8px 10px;
     font-size: 0.72rem;
   }
 
